@@ -22,7 +22,7 @@ int main (void){
 
     printf("You used %i bottles of water.\n", bottles);
 
-    //test
+    //test2
 
 
 
