@@ -31,16 +31,27 @@ int main (void){
 
         switch(     (ccnum % mod) / (mod/10)    ) {
 
-            case 1 :
-                sum += (ccnum % mod) / (mod/10);
+            case 9 :
+                sum += 9;
                 break;
 
-            case 2 :
-                sum += (ccnum % mod) / (mod/10);
+            case 8 :
+                sum += 7;
+                break;
+
+            case 7 :
+                sum += 5;
+                break;
+
+            case 6 :
+                sum += 3;
+                break;
+            case 5 :
+                sum += 1;
                 break;
 
             default :
-            sum += (ccnum % mod) / (mod/10);
+                sum += ( (ccnum % mod) / (mod/10) ) * 2;
         }//switch
 
         //sum += (ccnum % mod) / (mod/10);
