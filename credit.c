@@ -16,7 +16,7 @@ int main (void){
     int sum = 0;
 
 
-    int mod = 10; // mod starts at ten for this particular loop
+    long int mod = 10; // mod starts at ten for this particular loop
     for(int i = 0; i < nDigits; i += 2){
 
         sum += (ccnum % mod) / (mod/10);
@@ -62,7 +62,12 @@ int main (void){
 
     }// for
 
-
+    if( sum % 10 == 0 && nDigits > 13){
+        printf("yay\n");
+    }
+    else{
+        printf("not valid\n");
+    }
 
     printf("%ld \n", ccnum);
 
