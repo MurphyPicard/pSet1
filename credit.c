@@ -23,7 +23,7 @@ int main (void){
 
         mod = mod * 100;
 
-        printf("sum: %i \n", sum);
+        //printf("sum: %i \n", sum);
     }
 
     mod = 100; // mod starts at 100 for this particular loop
@@ -58,13 +58,13 @@ int main (void){
 
         mod = mod * 100;
 
-        printf("sum: %i \n", sum);
+        //printf("sum: %i \n", sum);
 
     }// for
 
-    printf("%ld \n", ccnum);
+    //printf("%ld \n", ccnum);
 
-    printf("%i  \n", nDigits);
+    //printf("%i  \n", nDigits);
 
 
 
@@ -75,15 +75,22 @@ int main (void){
         printf("VISA\n");
     }
     else if(sum % 10 == 0 && nDigits == 16 ){
-                printf("VISA or MC\n");
+
+        if(ccnum / 1000000000000000 == 4){
+            printf("VISA\n");
+
+        }
+        else if(ccnum / 1000000000000000 == 5){
+            printf("MASTERCARD\n");
+
+        }
+        else{
+            printf("INVALID\n");
+        }
 
     }
     else{
         printf("INVALID\n");
     }
-
-
-
-
 
 }//main
