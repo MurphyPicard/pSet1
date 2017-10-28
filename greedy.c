@@ -5,8 +5,9 @@
 int main (void){
 
     printf("how much due? ");
-    // greedy test3
-    double due;
+
+    // can be float or double
+    float due;
     due = get_float();
 
 
