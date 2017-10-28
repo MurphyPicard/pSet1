@@ -62,16 +62,27 @@ int main (void){
 
     }// for
 
-    if( sum % 10 == 0 && nDigits > 13){
-        printf("yay\n");
-    }
-    else{
-        printf("not valid\n");
-    }
-
     printf("%ld \n", ccnum);
 
     printf("%i  \n", nDigits);
+
+
+
+    if( sum % 10 == 0 && nDigits == 15 ){
+        printf("AMEX\n");
+    }
+    else if( sum % 10 == 0 && nDigits == 13 ){
+        printf("VISA\n");
+    }
+    else if(sum % 10 == 0 && nDigits == 16 ){
+                printf("VISA or MC\n");
+
+    }
+    else{
+        printf("INVALID\n");
+    }
+
+
 
 
 
