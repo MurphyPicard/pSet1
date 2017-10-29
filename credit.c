@@ -93,4 +93,7 @@ int main (void){
         printf("INVALID\n");
     }
 
+// although I passed all tests on check50, I did not expect to YET and believe there are more tests needed to be thorough
+// that being said, I have other things to work on and will move on to them and be happy with the win!
+
 }//main
