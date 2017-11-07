@@ -10,7 +10,7 @@ int main (void){
     long int ccnum;
     ccnum = get_long_long();
 
-
+    //#include <math.h>
     int nDigits = floor(log10(ccnum)) + 1;
 
     int sum = 0;
