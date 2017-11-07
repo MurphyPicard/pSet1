@@ -2,7 +2,8 @@
 #include <cs50.h>
 
 
-int main (void){
+int main (void)
+{
 
     printf("how much due? ");
 
@@ -18,31 +19,34 @@ int main (void){
     int coins = 0;
 
     // give the Quarters back first
-    while(due >= .25){
+    while (due >= .25)
+    {
         coins++;
-        due-=.25;
+        due -= .25;
     }
 
     // second give the dimes back
-    while(due >= .1){
+    while (due >= .1)
+    {
         coins++;
-        due-=.1;
+        due -= .1;
     }
 
     // third give the nickels back
-    while(due >= .05){
+    while (due >= .05)
+    {
         coins++;
-        due-=.05;
+        due -= .05;
     }
 
     // last give the pennies back
-    while(due >= .01){
+    while (due >= .01)
+    {
         coins++;
-        due-=.01;
+        due -= .01;
     }
 
     // mininum number of coins returned
     printf("%i \n", coins);
-
 
 }//main
